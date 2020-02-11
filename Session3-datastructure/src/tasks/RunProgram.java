@@ -3,62 +3,30 @@ package tasks;
 public class RunProgram {
 
 	public static void main(String[] args) {
-		Tasks task = new Tasks();
+//		Task3 task = new Task3();
 
 		// int[] arr = new int[10];
 		// int arr[] = new int[10];
-		int[] array1 = new int[] { 10, 12, 15, 8, 6 };
-		int[] array2 = new int[] { 10 };
-		int[] array3 = new int[] {};
-
+//		int[] array = new int[] { 1,2,3,4,5,6,7,8};
+				
+//		task.removedDuplicates(array);
+//		int[] removedDuplicates = task.removedDuplicates(array);
 		
-		int largestIndex1 = task.findLargestIndex(array1);
-		int largestIndex2 = task.findLargestIndex(array2);
-		int largestIndex3 = task.findLargestIndex(array3);
-
-		if(largestIndex1 != -1) {
-			System.out.println("the largest is =" + array1[largestIndex1]);
-		}
+//		for (int i = 0; i < removedDuplicates.length; i++) {
+//			System.out.print(removedDuplicates[i] + " ");
+//		}
 		
-		if(largestIndex2 != -1) {
-			System.out.println("the largest is =" + array2[largestIndex2]);
-		}
+		//int[] reverseWithTempArray = task.reverseWithTempArray(array);
+//		int[] reverseWithOutTempArray = task.reverseWithoutTempArray(array);
+//		
+//		for (int i = 0; i < reverseWithOutTempArray.length; i++) {
+//			System.out.print(reverseWithOutTempArray[i] + "  ");
+//		}
 		
-		if(largestIndex3 != -1) {
-			System.out.println("the largest is =" + array3[largestIndex3]);
-		}
-		else {
-			System.out.println("there is no element");
-		}
+		Task4 task = new Task4();
+		Employee[] emps = task.fillArray();
 		
-		
-		
-		
-		int samllestIndex1 = task.findSmallestIndex(array1);
-		int samllestIndex2 = task.findSmallestIndex(array2);
-		int samllestIndex3 = task.findSmallestIndex(array3);
-		
-		if(samllestIndex1 != -1) {
-			System.out.println("the smallest is =" + array1[samllestIndex1]);
-		}
-		else {
-			System.out.println("there is no element");
-		}
-		
-		if(samllestIndex2 != -1) {
-			System.out.println("the smallest is =" + array2[samllestIndex2]);
-		}
-		else {
-			System.out.println("there is no element");
-		}
-		
-		
-		
-		if(samllestIndex3 != -1) {
-			System.out.println("the smallest is =" + array3[samllestIndex3]);
-		}
-		else {
-			System.out.println("there is no element");
-		}
+		task.showEmployees(emps);
 	}
+	
 }
