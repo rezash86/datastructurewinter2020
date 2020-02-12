@@ -18,6 +18,7 @@ public class Task2 {
 				
 			}
 			result[i] = counter;
+			
 			studentResults[i] = new Student();
 			studentResults[i].setName("Student number " + (i + 1));
 			studentResults[i].setGrade(counter);
