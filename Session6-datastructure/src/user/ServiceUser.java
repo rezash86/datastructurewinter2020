@@ -1,7 +1,9 @@
 package user;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -12,6 +14,30 @@ public class ServiceUser {
 	public void getGrade() {
 		
 		List<Integer> grades = new ArrayList<Integer>();
+		
+		//for adding a new entity
+		//grades.add(object)
+		
+		
+		//add another collection into an arraylist
+		//grades.addAll([object])
+		
+		//check if that object exists in the collection
+		//grades.contains(object);
+		
+		//to fetch an element in the arraylist
+		//grades.get(index)
+		
+		//takes the index of that object
+		//grades.indexOf(object)
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		//foreach
 		grades.stream().forEach(n -> System.out.println(n));
