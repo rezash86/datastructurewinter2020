@@ -1,6 +1,9 @@
 package tasks;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 
 public class Task2 {
@@ -50,4 +53,27 @@ public class Task2 {
 		return setVowels.size() == 5;
 		
 	}
+	
+	public Map<String, Integer> findOccurance(String str){
+		//separate the words
+		String[] words = str.split(" ");
+		
+		Map<String, Integer> occurances = new HashMap<String, Integer>();
+		for (String word : words) {
+			if(!occurances.containsKey(word)) {
+				occurances.put(word, 1);
+			}
+			else {
+				occurances.put(word, (occurances.get(word) + 1));
+			}
+		}
+		
+		return occurances;
+	}
+	
+	
+	
+	
+	
+	
 }
